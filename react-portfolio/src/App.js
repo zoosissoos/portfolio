@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
-import Example from './components/wrapper'
+import Title from './components/title'
+import Nav from './components/nav'
+import About from './components/about'
+import Portfolio from './components/portfolio'
+import Contact from './components/contact'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Example />
+        <Title />
+        <Nav />
+        <About />
+        <Portfolio />
+        <Contact />
       </div>
     );
   }
