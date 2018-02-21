@@ -1,39 +1,33 @@
 import React from 'react'
-import Box from 'react-layout-components'
+import { Grid,Segment } from 'semantic-ui-react';
+import PortfolioCard from './portfoliocard.js'
 
 const Portfolio = () => (
-  <Box flex justifyContent="center" alignItems="center">
-    <Box column justifyContent="center" alignItems="center">
-      <Box row>
-        <h3>Portfolio</h3>
-      </Box>
-      <Box row>
-        <p>Below are selected projects that display the application of various technologies</p>
-      </Box>
-      <Box flex row maxWidth = {600} justifyContent = "space-around">
-        <Box column maxWidth = {200}>
-          <p>test1</p>
-        </Box>
-        <Box column maxWidth = {200}>
-          <p>test2</p>
-        </Box>
-        <Box column maxWidth = {200}>
-          <p>test3</p>
-        </Box>
-      </Box>
-      <Box row maxWidth = {700}>
-        <Box column>
-          <p>test4</p>
-        </Box>
-        <Box column>
-          <p>test5</p>
-        </Box>
-        <Box column>
-          <p>test6</p>
-        </Box>
-      </Box>
-    </Box>   
-  </Box>
+<div id={'portfolio'}>  
+  <Segment center padded='very' aligned inverted>
+    <h1>Portfolio</h1>
+    <Grid container centered padded columns={3}>
+      <Grid.Column verticalAlign='middle'>
+        <PortfolioCard/>
+      </Grid.Column >
+      <Grid.Column verticalAlign='middle'>
+        <PortfolioCard/>
+      </Grid.Column>
+      <Grid.Column verticalAlign='middle'>
+        <PortfolioCard/>
+      </Grid.Column>
+      {/* <Grid.Column verticalAlign='middle'>
+        <PortfolioCard/>
+      </Grid.Column >
+      <Grid.Column verticalAlign='middle'>
+        <PortfolioCard/>
+      </Grid.Column>
+      <Grid.Column verticalAlign='middle'>
+        <PortfolioCard/>
+      </Grid.Column> */}
+    </Grid>
+  </Segment>  
+</div>
 )
 
 export default Portfolio;

@@ -1,24 +1,24 @@
-import React from 'react'
-import Box from 'react-layout-components'
-import {MorphIcon} from 'react-svg-buttons'
+import React, { Component } from 'react'
+import { Menu } from 'semantic-ui-react'
 
-const Nav = () => (
-  // This acts as some kind of container
-  <Box flex justifyContent="center" alignItems="center">
-    <Box row justifyContent="center" alignItems="center"> 
-      <Box column order = {1} width = {100}>
-        <MorphIcon type="thunderbolt" />
-        <p>About</p>
-      </Box>
-      <Box column order = {2} width = {100}>
-        <MorphIcon type="code" />
-        <p>Portfolio</p>
-      </Box>  
-      <Box column order = {3} width = {100}>
-        <MorphIcon type="inbox" />
-        <p>Connect</p>
-      </Box>
-    </Box>
-  </Box>
-)
+class Nav extends Component {
+  state = { activeItem: 'Home' }
+
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
+  render() {
+    const { activeItem } = this.state
+
+    return (
+      <Menu borderless inverted>
+        <Menu.Item name='Home' href='#home' active={activeItem === 'Home'} onClick={this.handleItemClick} />
+        <Menu.Item name='About' href='#aboutme' active={activeItem === 'About'} onClick={this.handleItemClick} />
+        <Menu.Item name='Portfolio' href='#portfolio' active={activeItem === 'Portfolio'} onClick={this.handleItemClick} />
+        <Menu.Item name='Contact' href='#contact' active={activeItem === 'Contact'} onClick={this.handleItemClick} />
+      </Menu>
+    )
+  }
+}
+
+
 export default Nav;
