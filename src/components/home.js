@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Header, Segment,Image } from 'semantic-ui-react'
+import {Header, Segment,Image } from 'semantic-ui-react'
 
 const Home = () => (
   <div id = {'home'}>
@@ -8,7 +8,7 @@ const Home = () => (
       <Header.Content>
         Daniel Lewis
       </Header.Content>
-      <Image centered size='large' src={require('../images/profile.png')} />
+      <Image centered style = {{'width':250}} src={require('../images/portfolio.jpg')} />
       <Header.Content>
         Web Development
       </Header.Content>
