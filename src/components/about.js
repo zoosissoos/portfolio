@@ -1,8 +1,9 @@
 import React from 'react'
-import { Container, Segment } from 'semantic-ui-react'
+import { Container, Segment, Image } from 'semantic-ui-react'
 
 const AboutMe = () => (
-    <Segment id = {'aboutme'} padded='very'>
+    <Segment padded='very'>
+    <Image centered style = {{'width':250}} src={require('../images/portfolio.jpg')} />
       <Container>
         <h1>About Me</h1>
         <p>At a young age, I worked with my dad at my family owned service station.  I became fascinated by the ability to assemble individual parts to make a whole.  At home, I discovered an old IBM PS/2 computer in our basement. I began to disassemble it to understand how a modern-day computer operates and compared it to the inner workings of our family computer at that time. Understanding how independent pieces can be connected to create a final project has always been a passion of mine.</p>

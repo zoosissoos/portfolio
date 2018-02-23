@@ -5,8 +5,8 @@ const projects = [
     id: 0,
     image: './images/projects/example.PNG',
     title: 'Tasty Burger',
-    techs: 'Javascript,Node.js,Handlebars',
-    desc: 'An app demonstrating data using "digital burgers"',
+    techs: 'Javascript,Express.js, Node.js, JawsDB MySQL, Handlebars',
+    desc: 'An app demonstrating data persistence using "digital burgers" and JawsDB',
     deployed: 'https://salty-basin-77497.herokuapp.com/',
     github: 'https://github.com/zoosissoos/burger'
   },
@@ -14,7 +14,7 @@ const projects = [
     id: 1,
     image: require('../images/projects/example.PNG'),
     title: 'Beer Friend',
-    techs: 'Javascript, Node.js,',
+    techs: 'Javascript, Node.js, Express.js',
     desc: 'An app that allows the user to be matched to someone with similar tastes',
     deployed: 'https://calm-dusk-49591.herokuapp.com/',
     github: 'https://github.com/zoosissoos/beer-friend'
@@ -23,8 +23,8 @@ const projects = [
     id: 2,
     image: require('../images/projects/example.PNG'),
     title: 'Game of Memory',
-    techs: 'Javascript, React',
-    desc: 'A quick game to test memory and demonstrate stateful components',
+    techs: 'Javascript, React, Express.js',
+    desc: 'A quick game to test memory and demonstrate functional and stateful components',
     deployed: 'https://zoosissoos.github.io/memory-game/',
     github: 'https://github.com/zoosissoos/memory-game'
   },

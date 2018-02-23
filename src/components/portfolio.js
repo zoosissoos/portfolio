@@ -16,18 +16,16 @@ class Portfolio extends Component {
 
   render(){
     return (
-      <div>  
-        <Segment center="true" padded='very' aligned="true" inverted>
+        <Segment centered="true" padded='very' aligned="true" inverted>
           <h1>My Work</h1>
-          <Grid container center="true" padded columns={3}>
+          <Grid aligned="true" centered="true" padded stackable="true" columns={4}>
             {this.state.projectsDisp.map((project)=>(
-              <Grid.Column key={project.id.toString()} verticalAlign='middle'>
+              <Grid.Column key={project.id.toString()} centered="true" stretched="true">
                 <PortfolioCard prop = {project}/>
               </Grid.Column >
-              ))}   
+              ))}      
           </Grid>
         </Segment>  
-      </div>
     )
   }
 }
